@@ -1,7 +1,9 @@
 import meetupitem from './MeetupItem.module.css';
+import Card from '../ui/Card'
 
 function MeetupItem(props) {
   return (
+      <Card>
     <li className={meetupitem.item}>
       <div className={meetupitem.image}>
         <img src={props.image} alt="" />
@@ -15,6 +17,7 @@ function MeetupItem(props) {
         <button>To Favorite</button>
       </div>
     </li>
+    </Card>
   );
 }
 
