@@ -3,7 +3,7 @@ import Card from "../ui/Card";
 import newmeetupform from "./NewMeetupForm.module.css";
 
 
-function NewMeetupForm() {
+function NewMeetupForm(props) {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -23,7 +23,7 @@ function NewMeetupForm() {
       description: descriptionInputRef
     };
 
-    console.log(meetupData)
+    props.onAddMeetup(meetupData);
   }
 
   return (
