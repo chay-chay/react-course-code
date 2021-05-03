@@ -14,7 +14,16 @@ function NewMeetupForm() {
     const enteredTitle = titleInputRef.current.value
     const enteredImage = imageInputRef.current.value
     const enteredAddress = addressInputRef.current.value
-    const enteredDescription= descriptionInputRef.current.value
+    const enteredDescription = descriptionInputRef.current.value
+    
+    const meetupData = {
+      title: enteredTitle,
+      image: imageInputRef,
+      address: addressInputRef,
+      description: descriptionInputRef
+    };
+
+    console.log(meetupData)
   }
 
   return (
